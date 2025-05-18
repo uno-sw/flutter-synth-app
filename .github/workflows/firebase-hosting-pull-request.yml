@@ -17,6 +17,7 @@ jobs:
         with:
           channel: stable
           flutter-version: 3.29.3
+          cache: true
       - run: flutter pub get
       - run: flutter build web --wasm
       - uses: FirebaseExtended/action-hosting-deploy@v0
